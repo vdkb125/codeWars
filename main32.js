@@ -15,7 +15,7 @@ function digital_root(n) {
         return dRoot 
     } else if (!String(dRoot2)[1]){
         return dRoot2
-    } else (
-        return String(dRoot2)[1] ? String(dRoot).split('').map(num => Number(num)).reduce((sum, num) => sum + num) : dRoot2
-    )
+    } else {
+        return String(dRoot2)[1] ? String(dRoot2).split('').map(num => Number(num)).reduce((sum, num) => sum + num) : dRoot2
+    }
   }
